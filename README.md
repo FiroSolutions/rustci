@@ -14,7 +14,13 @@ $ curl -H "Accept: application/json" -H "Content-type: application/json" -X POST
 {"pasteid":"IRChsTAM4tWtAg3525VFUyrSSdTtsi73umr2oL4bs4"}
 
 $ curl "https://rust.firosolutions.com/paste/IRChsTAM4tWtAg3525VFUyrSSdTtsi73umr2oL4bs4/jsonresponse"| python -m json.tool
+```
 
+In shell you could also upload the Cargo.toml directly to as pasteservice([termbin.com](https://termbin.com) is nice)   
+```shell  
+$ export tmpcargo="$(cat Cargo.toml | nc termbin.com 9999)"
+$ echo $tmpcargo
+https://termbin.com/94zm
 
 ```
 
