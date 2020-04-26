@@ -32,6 +32,6 @@ $ curl "https://rust.firosolutions.com/paste/IRChsTAM4tWtAg3525VFUyrSSdTtsi73umr
 
 
 
-### use our github app
+# Use our github app
 
 https://blog.firosolutions.com/2019/09/github-rust-firo/
