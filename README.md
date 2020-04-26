@@ -29,3 +29,9 @@ $ curl "https://rust.firosolutions.com/paste/IRChsTAM4tWtAg3525VFUyrSSdTtsi73umr
 >>> bb = requests.get("https://rust.firosolutions.com/paste/{}/jsonresponse".format(json.loads(aa.text).get('pasteid')))
 
 ```
+
+
+
+### use our github app
+
+https://blog.firosolutions.com/2019/09/github-rust-firo/
