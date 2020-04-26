@@ -16,10 +16,13 @@ print('Result:')
 for x in json.loads(requests.get("https://rust.firosolutions.com/paste/{}/jsonresponse".format(json.loads(aa.text).get('pasteid'))).text).get('libs'):
 	if len(x)==4:
 		print('\033[1;31m Found a vulnerability for {} \033[0;0m'.format(x[0]))
-		print(x[3])
+		print('\033[0;92m Description: \033[0;0m')
+		print(x[3].get(list(x[3].keys())[0]).get('description'))
+		print("Link:", x[3].get(list(x[3].keys())[0]).get('link'))
 	else:
 		print("Library:",x[0], 'Your Version:', x[1], 'Latest Version', x[2])
 
 
 print('View result on:')
 print('https://rust.firosolutions.com/paste/{}/jsonresponse'.format(json.loads(aa.text).get('pasteid')))
+
