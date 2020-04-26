@@ -17,6 +17,7 @@ $ curl "https://rust.firosolutions.com/paste/S04tICdQmTzuKqIo92XX0gzP3GjlnE2EKTx
 
 ### in Python:     
 ```python
+>>> import requests, json
 >>> aa = requests.get('https://rust.firosolutions.com/apiadd', json={'urllink':'https://raw.githubusercontent.com/FiroSolutions/vuln_rust/master/Cargo.toml'}) 
 >>> aa.text
 '{"pasteid":"cVQGCgcBYXoftYSGNWjzd84vAvmVMCkZPbQiGSHGmmg"}\n'
